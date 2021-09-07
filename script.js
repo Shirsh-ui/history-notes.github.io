@@ -6,19 +6,17 @@ customElements.define('point-list', class extends HTMLElement {
         let head = document.createElement('div');
         let content = document.createElement('div');
         let h3 = document.createElement('h3');
-        let p = document.createElement('p');
 
         let content1 = this.children[0].innerHTML;
         let content2 = this.children[1].innerHTML;
 
         h3.innerHTML = content1;
-        p.innerHTML = content2;
+        content.innerHTML = content2;
 
         h3.style.marginTop = "10px";
         h3.style.marginBottom = "10px";
 
         head.appendChild(h3);
-        content.appendChild(p);
         container.appendChild(head);
         container.appendChild(content);
         shadow.appendChild(container);
