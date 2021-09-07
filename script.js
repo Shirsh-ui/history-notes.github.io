@@ -5,7 +5,7 @@ customElements.define('point-list', class extends HTMLElement {
         let container = document.createElement('div');
         let head = document.createElement('div');
         let content = document.createElement('div');
-        let h1 = document.createElement('h1');
+        let h1 = document.createElement('h3');
         let p = document.createElement('p');
 
         let content1 = this.children[0].innerHTML;
