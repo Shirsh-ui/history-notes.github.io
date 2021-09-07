@@ -14,8 +14,8 @@ customElements.define('point-list', class extends HTMLElement {
         h3.innerHTML = content1;
         p.innerHTML = content2;
 
-        h3.style.paddingTop = "10px";
-        h3.style.paddingBottom = "10px";
+        h3.style.marginTop = "10px";
+        h3.style.marginBottom = "10px";
 
         head.appendChild(h3);
         content.appendChild(p);
