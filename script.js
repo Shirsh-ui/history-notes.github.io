@@ -9,7 +9,7 @@ customElements.define('point-list', class extends HTMLElement {
       let content = document.createElement('div');
       let h3 = document.createElement('h3');
   
-          h3.innerHTML = this.children[0].innerHTML;
+      h3.innerHTML = this.children[0].innerHTML;
       content.innerHTML = this.children[1].innerHTML;
   
       h3.style.marginTop = "10px";
