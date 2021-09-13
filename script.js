@@ -1,24 +1,32 @@
-customElements.define('point-list', class extends HTMLElement {
-    constructor() {
-      super();
-      let shadow = this.attachShadow({
-        mode: 'open'
-      });
-      let container = document.createElement('div');
-      let head = document.createElement('div');
-      let content = document.createElement('div');
-      let h3 = document.createElement('h3');
-  
-      h3.innerHTML = this.children[0].innerHTML;
-      content.innerHTML = this.children[1].innerHTML;
-  
-      h3.style.marginTop = "10px";
-      h3.style.marginBottom = "10px";
-  
-      head.appendChild(h3);
-      container.appendChild(head);
-      container.appendChild(content);
-      shadow.appendChild(container);
-    }
-  });
-  
+let lastShown;
+let lastSecButtons;
+
+function showSecondaryButtons(event) {
+  if (lastSecButtons) document.querySelector(`#${lastSecButtons} + div`).classList.toggle('inlb');
+  document.querySelector(`#${event.currentTarget.getAttribute('id')}  + div`).classList.toggle('inlb');
+  lastSecButtons = event.currentTarget.getAttribute('id');
+}
+
+document.querySelectorAll('.primaryButton').forEach(function(button) {
+  button.addEventListener('click', showSecondaryButtons, false);
+});
+
+document.querySelectorAll('button').forEach(function(button) {
+  if (button.hasAttribute('data-target-id')) {
+    let targetContent = document.getElementById(button.getAttribute('data-target-id'));
+    let head = document.createElement('h2');
+    head.appendChild(document.createTextNode(button.innerHTML));
+    targetContent.insertBefore(head, targetContent.firstChild);
+    head.classList.toggle('plantTissue');
+
+    button.addEventListener('click', function(event) {
+      if (lastShown) {
+        let lastShownContent = document.getElementById(lastShown);
+        if (lastShownContent.classList.contains('initial'))
+         lastShownContent.classList.remove('initial'); 
+      }
+      document.getElementById(event.currentTarget.getAttribute('data-target-id')).classList.add('initial');
+      lastShown = event.currentTarget.getAttribute('data-target-id');
+    });
+  }
+});
