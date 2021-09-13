@@ -1,85 +1,258 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="decoration.css">
+    <title>History Notes</title>
+</head>
+<body>
+    <div class="page-grid">
+        <div id="subject-changer" data-state="history">
+            <div id="history-switcher" style="border-right: 3px solid #d4ab46;">
+                <button onclick="changeSubject()">History</button>
+            </div>
+            <div id="geography-switcher" style="border-left: 3px solid #d4ab46;">
+                <button onclick="changeSubject()">SPL</button>
+            </div>
+        </div>
+        <div id="mainContent">
+            <div id="FR1">
+                <ol>
+                    <li>
+                        <h4>Division of Society</h4>
+                        <p>The French society was divided into 3 estates or orders. Too much discrimination existed between them.</p>
+                    </li>
+                    <li>
+                        <h4>First Estate/Clergy</h4>
+                        <p>Although the members of church owned large amounts of land, yet they were privileged and were exempted from paying tax to the government. Rather the church levied the tax on the agricultural produce called as tithes.</p>
+                    </li>
+                    <li>
+                        <h4>Second Estate/Nobility</h4>
+                        <p>The nobles also held too much of landed property, and apart from that, they held high posts in army and administration, yet they were privileged by birth and were exempted from paying tax. They extracted feudal dues from the peasants.</p>
+                    </li>
+                    <li>
+                        <h4>High Class of Third Estate</h4>
+                        <p>This class comprised of traders, merchants, officials, lawyers and as it was an intellectual class, they initiated the revolution because of the discrimination that existed in the society.</p>
+                    </li>
+                    <li>
+                        <h4>Landless peasants of Third Estate</h4>
+                        <p>This class was the worst sufferer as the entire burden of taxation fell on them. Apart from paying a direct tax to the state called taille, they also payed tax to the first and second estates.</p>
+                    </li>
+                </ol>
+            </div>
+            <div id="FR2">
+                <ol>
+                    <li>
+                        <h4>Extravagancy of queen Marie Antoinette</h4>
+                        <p>Louis XVI was married to the Austrian princess Marie Antoinette and she was in the habit of leading a very extravagant lifestyle, specially when France was facing a severe financial crisis.</p>
+                    </li>
+                    <li>
+                        <h4>Empty treasury</h4>
+                        <p>When Louis XVI of Bourbon dynasty ascended the throne in 1774, the treasury of France was already empty because of long wars.</p>
+                    </li>
+                    <li>
+                        <h4>Defective system of taxation</h4>
+                        <p>The system of taxation in France was highly defective as the first and second estates were exempted from payment of tax, and the entire burden of taxation fell on the third estate.</p>
+                    </li>
+                    <li>
+                        <h4>War with Britain</h4>
+                        <p>France helped the 13 American colonies to gain independence from their common enemy Britain. This war added 1 billion livres to the debt that was already now 2 billion livres.</p>
+                    </li>
+                    <li>
+                        <h4>Subsistence Crisis</h4>
+                        <p>This was an extreme situation in France during Old Regime (before 1789) where the basic means of livelihood was endangered.</p>
+                        <ol>
+                            <li>
+                                <h5>Rise in Population</h5>
+                                <p>The <span class="underline">population</span> of France rose from 23 million to 28 million during 1715 to 1789.</p>
+                            </li>
+                            <li>
+                                <h5>Sharp price rise</h5>
+                                <p>As the population rose, there was an increase in the demand for food grains, but the supply/production of grains could not match with the demand due to which there was a <span class="underline">sharp price rise</span> in the market.</p>
+                            </li>
+                            <li>
+                                <h5>Fixed Wage</h5>
+                                <p>As most workers were employed in workshops, they had <span class="underline">fixed wages</span> and it could not keep pace with the price rise in the market.</p>
+                            </li>
+                            <li>
+                                <h5>Natural Calamity</h5>
+                                <p>The situation became worse due to frequent <span class="underline">natural calamities</span> like drought or hailstorm which reduced the harvest.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div id="FR3">
+                <ol>
+                    <li>
+                        <h4>Despotic Rule</h4>
+                        <p>Louis XVI was a despotic monarch and believed in Divide Rights theory.</p>
+                    </li>
+                    <li>
+                        <h4>Corruption in Administration</h4>
+                        <p>Most of the officials working in the court of Louis XVI were very corrupt, enjoyed the life of luxury and did not take proper care of the administration.</p>
+                    </li>
+                    <li>
+                        <h4>No liberty</h4>
+                        <p>The French people during Old Regime did not have freedom of speech and expression and also they did not have the freedom to choose their religion.</p>
+                    </li>
+                    <li>
+                        <h4>Confusion in Administration</h4>
+                        <p>There were different kinds of laws on the same topics made by the central government, provincial government, district level and church, and all these laws were overlapping each other. Added to that, weights and measures were not standard and there was no common/uniform currency.</p>
+                    </li>
+                    <li>
+                        <h4>Defective judicial system</h4>
+                        <p>This system was also not proper, and posts of judges were bought and sold. Moreover, the punishments were different for same crimes for different sections of society.</p>
+                    </li>
+                    <li>
+                        <h4>Role of Philosophers</h4>
+                        <ol>
+                            <li>
+                                <h5>John Locke</h5>
+                                <p>Two treatises of government (book) --- he refuted the doctrine of the divine and absolute right of the monarch.</p>
+                            </li>
+                            <li>
+                                <h5>Jean Jacques Rousseau</h5>
+                                <p>Social contract (book) and ``Man is born free but everywhere he is in chains'' (Philosophy)</p>
+                            </li>
+                            <li>
+                                <h5>Montesquieu</h5>
+                                <p>The spirit of laws (book) and he gave the theory of demonstration of powers between legislature, executive and judiciary.</p>
+                            </li>
+                            <li>
+                                <h5>Voltaire</h5>
+                                <p>He praised the British parliamentary model and criticized the unlimited powers exercised by church and monarchy.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div id="FR4">
+                <h4>5 May, 1789</h4>
+                <p>As France was facing severe financial crisis, Louis XVI decided to increase the taxes. For this, a meeting of estates general was called. Members of third estate were not ready to accept the previous system of voting and demanded the system of ``1 person 1 vote'', which Louis XVI rejected so they walked off.</p>
+                <h4>20 June 1789</h4>
+                <p>The members of third state gathered in the tennis court, declared themselves to be the national assembly and drafted the constitution of France.</p>
+                <h4>14 July 1789 (Fall of Bastille)</h4>
+                <ol>
+                    <li>There were rumours that king had sent troops.</li>
+                    <li>In response to the rumor, they formed army and they attacked the fort prison of Bastille in search of arms and ammunition, killed the guard, released the prisoners and even demolished the building.</li>
+                    <li>The bricks of building were sold as souvenirs. The fort was hated because it stood for despotic power of king.</li>
+                </ol>
+                <h4>4 August 1789</h4>
+                <ol>
+                    <li>The assembly passed a decree abolishing the <span class="underline">feudal system</span> of taxes and obligation.</li>
+                    <li>Members of clergy were <span class="underline">forced to give up their privileges</span>.</li>
+                    <li>Tithes was abolished, land owned by church was confiscated and as a result, government acquired assets worth 2 billion livres.</li>
+                </ol>
+            </div>
+            <div id="FR5">
+                <h5>Question</h5>
+                <p>Briefly discuss the features of constitution of France 1791?</p>
+                <h5>Answer</h5>
+                <ol>
+                    <li>France converted to <span class="underline">constitutional monarchy</span> and the power of the monarch was limited.</li>
+                    <li>Power was now not concentrated in the hand of one person but was distributed between three organs, i.e. <span class="underline">Legislature, Executive and Judiciary</span>.</li>
+                    <li>The constitution of 1791 gave the power to <span class="underline">make laws</span> to the national assembly.</li>
+                    <li>The national assembly was elected by a group of electors who were in turn chosen by the <span class="underline">active citizens</span>. Men above age of 25 who paid taxes equal to at least 3 days of a laborer's wage were given the status of active citizens.</li>
+                    <li>The constitution began with the declaration of the <span class="underline">rights of man and citizens</span>. Right such as right to life, freedom of speech, freedom of opinion, equality before law were established as natural and inalienable rights.</li>
+                </ol>
+            </div>
+            <div id="FR6">
+                <h5>Question</h5>
+                <p>Briefly mention the steps taken by Jacobins to establish republic in France?</p>
+                <h5>Answer</h5>
+                <ol>
+                    <li>The members of Jacobins attacked the palace of Tuileries, killed the king's guard and held the king hostage for several hours (10 August 1792). Later on the assembly voted to <span class="underline">imprison the royal family</span>.</li>
+                    <li>All men above the age of 21 regardless of their wealth, got the right to vote and newly elected assembly was called as <span class="underline">the convention</span>.</li>
+                    <li>On 21 September 1792, monarchy was abolished and France was declared as <span class="underline">republic</span>.</li>
+                    <li>Louis XVI was sentenced to death by the court on charge of trison and on 21 January 1793, he was publicly executed.</li>
+                    <li>All <span class="underline">anti republican</span> and anti democratic forces such as ex nobels, ex clergy, members of other political parties and members of own party who disagreed were arrested, imprisoned and punished.</li>
+                </ol>
+                <h5>Question</h5>
+                <p>Mention some of the reforms introduced by Robespierre's government for the welfare of society/public.</p>
+                <h5>Answer</h5>
+                <ol>
+                    <li>The government issued laws which placed <span class="underline">maximum sealing</span> on wages and prices.</li>
+                    <li><span class="underline">Meat and bread were rationed</span> and peasants were forced to transport their grains to the cities and sell it at prices fixed by the government.</li>
+                    <li>The use of more expensive flour was forbidden and all citizens were required to eat <span class="underline">equality bread</span>.</li>
+                    <li>The use of traditional <q>monsieur</q> and <q>madame</q> was abolished and all french men and women henceforth were citizens.</li>
+                    <li>Churches were <span class="underline">shut down</span> and their buildings were converted to barracks or offices. </li>
+                </ol>
+            </div>
+            <div id="FR7">
+                <h5>Question</h5>
+                <p>What were the reforms introduced by the revolutionary government for the welfare of women?</p>
+                <h5>Answer</h5>
+                <ol>
+                    <li>State schools were created and schooling was made compulsory for all girls.</li>
+                    <li>The fathers could no longer force their daughters into marriage against their will.</li>
+                    <li>Marriage was made a contract which could be entered into freely and <span class="underline">registered under the civil law</span>.</li>
+                    <li><span class="underline">Divorce</span> was made legal and it could be applied by both men and women now.</li>
+                    <li>Women could now get training for jobs so that they could become artist or run small business.</li>
+                </ol>
+                <h5>Question</h5>
+                <p>Who was Olympe de Gouges? Mention some of her contributions.</p>
+                <h5>Answer</h5>
+                <p>Olympe de Gouges was a very important politically active women in Revolutionary France fighting for women's rights.</p>
+                <h6>Contributions:</h6>
+                <ol>
+                    <li>She protested against the constitution and the declaration of rights of man and citizen as they excluded women from basic rights.</li>
+                    <li>She wrote the declaration of rights of women and citizens and addressed it to the queen and national assembly.</li>
+                    <li>She criticized the Jacobin's government for forcibly closing the women's clubs.</li>
+                </ol>
+            </div>
+            <div id="FR8">
+                <ol>
+                    <li>France had colonies in the Caribbean which had plantations and as Europeans didn't want to go and work in distant areas, slaves were brought and purchased from Africa.</li>
+                    <li>These plantations grew commodities like tobacco, sugar, indigo and coffee.</li>
+                    <li>Although the National assembly had long debates on removal of slavery, yet they didn't pass any law as they didn't wish to oppose the business class.</li>
+                    <li>The convention in 1794 finally made laws to free all the slaves.</li>
+                    <li>Napoleon reintroduced slavery and finally it was abolished in 1848.</li>
+                </ol>
+            </div>
+            <div id="FR9">
+                <ol>
+                    <li>
+                        <h4>Democracy/Republic</h4>
+                        <p>The basic concept of democratic and republican form of government became popular worldwide after french revolution.</p>
+                    </li>
+                    <li>
+                        <h4>Constitution</h4>
+                        <p>The basic concept of Constitution which provides guidelines to the government became popular through/after french revolution.</p>
+                    </li>
+                    <li>
+                        <h4>Rights</h4>
+                        <p>Basic rights such as liberty and equality were provided to citizens and subsequently it became a worldwide phenomena.</p>
+                    </li>
+                    <li>
+                        <h4>Separation of power</h4>
+                        <p>The theory of separation of power between three organs of government - Legislature, Executive and Judiciary became popular after french revolution.</p>
+                    </li>
+                    <li>
+                        <h4>Inspiration to colonies</h4>
+                        <p>The french revolution proved to be a source of inspiration for many colonies in Asia and Africa to fight for freedom against their imperial masters.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="tableOfContents">
+            <button class="primaryButton" id="p1">French Revolution</button>
+            <div class="none">
+              <button class="secondaryButton" data-target-id="FR1">Social causes of French Revolution</button>
+              <button class="secondaryButton" data-target-id="FR2">Economic causes of French Revolution</button>
+              <button class="secondaryButton" data-target-id="FR3">Political causes of French Revolution</button>
+              <button class="secondaryButton" data-target-id="FR4">Outbreak of the Revolution</button>
+              <button class="secondaryButton" data-target-id="FR5">France abolishes monarchy and becomes constitutional monarchy</button>
+              <button class="secondaryButton" data-target-id="FR6">France converts to a republic</button>
+              <button class="secondaryButton" data-target-id="FR7">Women’s revolution</button>
+              <button class="secondaryButton" data-target-id="FR8">Abolition of Slavery</button>
+              <button class="secondaryButton" data-target-id="FR9">Legacy</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
-    <h1>Social causes of French Revolution</h1>
-    <ol>
-      <li>
-        <point-list>
-          <div>Division of Society</div>
-          <div>The French society was divided into 3 estates or orders. Too much discrimination existed between them.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>First Estate/Clergy</div>
-          <div>Although the members of church owned large amounts of land, yet they were privileged and were exempted from paying tax to the government. Rather the church levied the tax on the agricultural produce called as tithes.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>Second Estate/Nobility</div>
-          <div>The nobles also held too much of landed property, and apart from that, they held high posts in army and administration, yet they were privileged by birth and were exempted from paying tax. They extracted feudal dues from the peasants.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>High Class of Third Estate</div>
-          <div>This class comprised of traders, merchants, officials, lawyers and as it was an intellectual class, they initiated the revolution because of the discrimination that existed in the society.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>Landless peasants of Third Estate</div>
-          <div>This class was the worst sufferer as the entire burden of taxation fell on them. Apart from paying a direct tax to the state called taille, they also payed tax to the first and second estates.</div>
-        </point-list>
-      </li>
-    </ol>
-    <h1>Economic causes of French Revolution</h1>
-    <ol>
-      <li>
-        <point-list>
-          <div>Extravagancy of queen Marie Antoinette</div>
-          <div>Louis XVI was married to the Austrian princess Marie Antoinette and she was in the habit of leading a very extravagant lifestyle, specially when France was facing a severe financial crisis. </div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>Empty treasury</div>
-          <div>When Louis XVI of Bourbon dynasty ascended the throne in 1774, the treasury of France was already empty because of long wars.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>Defective system of taxation</div>
-          <div>The system of taxation in France was highly defective as the first and second estates were exempted from payment of tax, and the entire burden of taxation fell on the third estate.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>War with Britain</div>
-          <div>France helped the 13 American colonies to gain independence from their common enemy Britain. This war added 1 billion livres to the debt that was already now 2 billion livres.</div>
-        </point-list>
-      </li>
-      <li>
-        <point-list>
-          <div>Subsistence Crisis</div>
-          <div>
-            This was an extreme situation in France during Old Regime (before 1789) where the basic means of livelihood was endangered.
-            <ul>
-              <li><h4>Rise in Population</h4><div>The population of France rose from 23 million to 28 million during 1715 to 1789.</div></li>
-              <li><h4>Sharp price rise</h4><div>As the population rose, there was an increase in the demand for food grains, but the supply/production of grains could not match with the demand due to which there was a sharp price rise in the market.</div></li>
-              <li><h4>Fixed Wage</h4><div>As most workers were employed in workshops, they had fixed wages and it could not keep pace with the price rise in the market.</div></li>
-              <li><h4>Natural Calamity</h4><div>The situation became worse due to frequent natural calamities like drought or hailstorm which reduced the harvest.</div></li>
-            </ul>
-          </div>
-        </point-list>
-      </li>
-    </ol>
-  </body>
+</body>
 </html>
