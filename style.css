@@ -44,6 +44,8 @@
 
 #mainContent {
   grid-area: mn;
+  background: black;
+  color: wheat;
 }
 
 #mainContent > div {
